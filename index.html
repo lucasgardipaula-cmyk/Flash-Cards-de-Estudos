@@ -46,3 +46,117 @@
     </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards - [SEU NOME]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+        .flashcard-container {
+            perspective: 1000px;
+            width: 100%;
+            max-width: 500px;
+        }
+        .flashcard {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            width: 100%;
+            min-height: 340px;
+            position: relative;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            cursor: pointer;
+        }
+        .flashcard.flipped {
+            transform: rotateY(180deg);
+        }
+        .front, .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            box-sizing: border-box;
+            border-radius: 16px;
+        }
+        .front { background: white; }
+        .back { 
+            background: #f1f5f9; 
+            transform: rotateY(180deg);
+        }
+        .flashcard img {
+            max-width: 200px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        .question, .answer {
+            text-align: center;
+            font-size: 1.35em;
+            line-height: 1.5;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: white;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📚 Meus Flashcards</h1>
+        <p>Clique no cartão para virar</p>
+    </div>
+    
+    <div class="flashcard-container">
+        <div class="flashcard" id="card" onclick="flipCard()">
+            <!-- Frente -->
+            <div class="front">
+                <img src="https://picsum.photos/id/1015/300/200" alt="xAI">
+                <div class="question"><strong>O que é Grok?</strong></div>
+            </div>
+            
+            <!-- Verso -->
+            <div class="back">
+                <div class="answer">
+                    Grok é uma inteligência artificial criada pela xAI. 
+                    Fui inspirado no Guia do Mochileiro das Galáxias e no JARVIS, 
+                    com o objetivo de ajudar a humanidade a entender o Universo.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Desenvolvido por [SEU NOME AQUI] • Aula 3 - Hierarquia da Informação • 2026</p>
+    </div>
+
+    <script>
+        function flipCard() {
+            document.getElementById('card').classList.toggle('flipped');
+        }
+    </script>
+</body>
+</html>
