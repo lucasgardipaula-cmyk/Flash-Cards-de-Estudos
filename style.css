@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #8d8d88;
+    background-color: #aaaaa2;
     font-family: Arial, sans-serif;
 }
 
@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #9e9e99;
+    background-color: #8f8f89;
     font-family: Arial, sans-serif;
 }
 
@@ -35,12 +35,12 @@ body {
 }
 
 .cabecalho-link {
-    color: #0b0b0b;
+    color: #615f5f;
     text-decoration: none;
 }
 
 h1 {
-    color: #0d0d0d;
+    color: #5e5a5a;
     font-size: 24px;
 }
 
@@ -54,7 +54,7 @@ main {
 
 main h2 {
     margin-bottom: 30px;
-    color: #0d0d0d;
+    color: #000000;
     text-align: center;
 }
 
