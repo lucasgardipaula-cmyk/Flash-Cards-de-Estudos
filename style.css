@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #eeea0c;
+    background-color: #8d8d88;
     font-family: Arial, sans-serif;
 }
 
@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #eeea0c;
+    background-color: #9e9e99;
     font-family: Arial, sans-serif;
 }
 
@@ -31,7 +31,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #a5e70c;
+    background-color: #d3d4d0;
 }
 
 .cabecalho-link {
@@ -59,7 +59,7 @@ main h2 {
 }
 
 footer {
-    background-color: #a5e70c;
+    background-color: #3b3b3b;
     padding: 15px 25px;
     color: #0b0b0b;
     text-align: center;
@@ -104,7 +104,7 @@ section {
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(16, 15, 15, 0.15);
     backface-visibility: hidden;
-    background-color: #afe6e7;
+    background-color: #97a1a1;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -157,7 +157,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #a5e70c;
+    background-color: #b1b3ad;
 }
 
 .cabecalho-link {
